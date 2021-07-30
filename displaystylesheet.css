@@ -1,0 +1,76 @@
+*{ margin: 0px;  padding:0px;}
+#wrapper{display: grid; grid-template-columns: 50% 50%; background-color:rgb(255, 255, 255); height:auto;}
+
+#imagediv{ display: flex;
+    align-items: center;  padding: 20px; 
+    }
+
+#imagediv img{ display: block;
+    width: 210x;
+    height: 210px;  
+    margin: auto;}
+
+#infodiv{ padding: 20px;}
+
+
+@media(max-width:800px)
+  {
+    #wrapper{grid-template-columns: 100%;
+    height: auto;
+    }
+  }
+
+  #infodiv{ background-color: rgb(245, 245, 245); padding-top: 25px; font-family: 'Open Sans', sans-serif; }
+
+  #infodiv h1{ font-size: 40px; }
+
+  #infodiv #stars{ padding-top: 10px;}
+
+  #infodiv #stars{ color: rgb(255, 185, 55);}
+  #infodiv h3{ font-size: 25px;  text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;}
+
+#infodiv p{ padding-top: 10px; }
+
+.pricediv{ padding-top: 10px;}
+
+.pricediv .Price{ font-size:40px; color: rgb(255, 94, 0);}
+
+.pricediv .Cutprice{ font-size:30px; color: rgb(255, 185, 55); }
+
+.pricediv .Cutprice .innerspan{ text-decoration: line-through; }
+
+#sharebtn { border: 2px solid gray; background-color: white; width: 40px; height: 45px;  font-size: 16px; }
+
+#sharebtn i { color:gray;}
+
+#sharebtn:hover i { color:orange;}
+
+
+
+#cartbtn{   font-family: 'Open Sans', sans-serif; color: rgb(0, 0, 0); border: none; background-color: white; border:2px solid orange; margin-top: 10px; width: 240px; height: 45px; font-size: 20px;}
+
+#requestbtn{  font-family: 'Open Sans', sans-serif; color: rgb(0, 0, 0); border: none; background-color: white; border:2px solid orange; margin-top: 10px;  width: 240px; height: 45px; font-size: 20px;}
+
+#cartbtn:hover,#requestbtn:hover{ color:white; background-color: orange;}
+
+.btndiv{ padding-top: 10px; }
+
+#btnadd{ border: 2px solid gray; background-color: white; margin-right: 10px; width: 40px; height: 40px; font-size: 20px;}
+
+#btnsub{ border: 2px solid gray; background-color: white; margin-left: 10px; width: 40px; height: 40px; font-size: 20px;}
+
+#btnadd:hover{ color: white; background-color: gray;}
+
+#btnsub:hover{ color: white; background-color: gray;}
+
+
+
+@media(max-width:800px)
+  {
+    #iamgediv  #divonimage{ width:100%;
+    
+    }
+  }
+

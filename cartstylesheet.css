@@ -1,0 +1,85 @@
+.additem:hover{color:orange;}
+.subitem:hover{color:orange;}
+.deleteitem:hover{color:rgb(179, 21, 0);}
+
+#totalcart{ color:rgb(77, 77, 77);}
+.total{ padding: 20px; margin-left: auto; margin-right: auto; background-color: rgb(241, 241, 241); width:50%; height:auto; font-family: 'Open Sans', sans-serif; font-size:40px; }
+
+.radiobtn{ font-size: 20px; color: rgb(104, 104, 104);}
+
+
+input[type='radio']:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+input[type='radio']:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #ffa500;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+}
+
+
+@media(max-width:714px)
+{
+  .total{ width: 90%;}
+
+}
+
+.order{ background-color:#e74100
+  ; color:white;font-family: 'Open Sans', sans-serif; padding: 10px; width:200px; height:45px; font-size:20px; border:none; border-radius:5px;}
+
+.order:hover{ background-color:#d13b00;  }
+
+
+
+input[type="text"],input[type="email"]
+{
+  border: 1px solid gray;
+  padding-left: 10px;
+  width: 50%; height: 30px;
+  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+}
+input[type="text"]:focus
+{
+  outline: 1px solid #e74100;
+  border-radius: 5px;
+  border: none;
+}
+input[type="email"]:focus
+{
+  outline: 1px solid #e74100;
+  border-radius: 5px;
+  border: none;
+}
+@media(max-width:714px)
+{
+  input[type="text"],input[type="email"]
+{
+  
+  width: 90%; 
+}
+
+}
+
+#textid{ text-align: center; font-size: 20px; font-family: 'Open Sans', sans-serif; }

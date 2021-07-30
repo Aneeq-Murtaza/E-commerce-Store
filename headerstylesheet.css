@@ -1,0 +1,392 @@
+*{margin: 0px; padding:0px;  }
+html {
+  scroll-behavior: smooth;
+}
+.fullnavdiv{  position: relative; display: block; width: 100%; height: 100px; }
+
+#inquiry{ transition: 1s;}
+.contactinfo
+{
+
+  z-index: 9999999;
+  
+  
+  position: fixed;
+  
+  display:block;
+   
+    
+    width: 100%;
+    height: 47px;
+    background-color: black;
+  
+    font-family:sans-serif;
+    margin-bottom: 100px;
+    
+    
+}
+
+body
+{
+  background-color: rgb(255, 255, 255);
+}
+
+.contactinfo ul {
+    list-style-type: none;
+    margin: 0;
+    margin-right: 18px;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    right: 0px; 
+    top: 0px;
+    height: 46px;
+
+  }
+  
+  .contactinfo li {
+  float: left;
+
+   
+  }
+  
+  .contactinfo li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 15px;
+  }
+  .contactinfo .fa-shopping-cart{ color: orange; font-size: 20px; }
+  .fa-users-cog{  color: white; font-size: 22px;}
+  .contactinfo #cartno{  font-size: 20px;}
+  .fa-phone{  font-size: 25px; color: orange; font-family: 'Open Sans', sans-serif; }
+  .contactinfo #phno1{  font-size: 23px; list-style: none; color: white;}
+  a{ text-decoration: none;}   
+ 
+  #phno{ padding: 10px; margin-left: 22px; font-family: 'Open Sans', sans-serif ; }
+  
+  @media screen and (max-width: 424px)
+  {
+    .contactinfo #phno1{ font-size: 18px;}  
+  }
+  @media screen and (max-width: 378px)
+  {
+    .contactinfo #phno1{ font-size: 15px;}
+  }
+  @media screen and (max-width: 350px)
+  {
+    .contactinfo #phno1{ font-size: 12px;}
+  }
+
+  .fullnavdiv{ width: 100%; display: block; position: relative;}
+  
+  header{ position: relative;  background-color: rgb(182, 181, 181);    display: block; padding-left: 20px !important; padding-right: 20px !important; padding-top:0px !important; padding-bottom: 0px !important; width: 100%; box-sizing: border-box;}
+
+  header .logo{
+   margin-top: 14px; color:white; font-size: 40px;  line-height: 50px; height: 50px; font-weight: bold; float: left;}
+header nav{ z-index: 99999999; float:right; }
+
+header nav ul { z-index: 99999999; transition:2s; margin: 0px; padding: 0px; display: flex;}
+
+header nav ul li{ border-radius: 20px;  list-style: none; position: relative; }
+
+header nav ul li ul{ border-radius: 10px; background-color: rgb(233, 233, 233); z-index: 99999999;  position: absolute; left: 0;   color:black; display: none;}
+header nav ul li:hover ul{  display: block;  }
+header nav ul li a{  font-weight: bold; font-size: 16px;}
+
+header nav ul li a:hover{ transition: 2s;  color: black;}
+
+header nav ul li ul li{ display: block; width: 300px;  }
+header nav ul li ul li a{color: black;}
+header nav ul li ul li a:hover{   color: black;}
+header nav ul li a{ font-family: Arial, Helvetica, sans-serif; height: 50px; line-height: 50px; padding:15px ; color:black; text-decoration: none; display: block; }
+header nav ul li ul li a{ margin: 0; padding: 2px; padding-left: 20px;}
+.toggle{ color:rgb(0, 0, 0);  margin-right: 15px; margin-top: 45px; float: right; font-size: 28px; cursor: pointer; display: none; }
+.cartitembtn{ margin-right: 20px; color:white; line-height: 79px; float: right; font-size: 24px; cursor: pointer;  }
+.accountbtn{  color:white; line-height: 79px; float: right; font-size: 24px; cursor: pointer; }
+.cartitembtn:hover{ color: rgb(255, 166, 0); }
+.accountbtn:hover{color:rgb(255, 166, 0); }
+@media(max-width:900px)
+{
+  .accountbtn{ margin-right: 20px;}
+  
+    header{ padding: 0 20px;}
+    .toggle{ display: block;}
+    header nav.active { left: -100%}
+    header nav { overflow: scroll; left: 0%; position:fixed; width:80%; height: calc(100% - 37px ); background-color:rgb(240, 240, 240); top:50px;  transition: 1s;  }
+    header nav ul li a{ width: 100%; color: black;} 
+    header nav ul li a:hover{ color: black;   }
+    header nav ul{ display: block;}
+    header nav ul li ul{ position: relative;}
+    header nav ul li ul li{ width: 100%;}
+    header nav ul li:hover ul{ display: none;  }
+    header nav ul li.active ul{ transition:1s; display: block;  }
+    
+    header nav ul li a{ font-weight: bold; font-size: 14px; padding: 0; padding-left: 10px;}
+    
+}
+
+
+
+@media(max-width:420px)
+{
+  header .logo{ font-size: 30px;}
+  
+  .cartitembtn{ font-size: 20px;}
+  .accountbtn{font-size: 20px;}
+
+}
+@media(max-width:344px)
+{
+  header .logo{ font-size: 25px;}
+ 
+  .cartitembtn{ font-size: 18px;}
+  .accountbtn{font-size: 18px;}
+
+}
+.imglogo{ position: absolute; top:calc(0px - 30px); left: 10px;}
+
+header nav ul li a {
+  display: inline-block;
+  position: relative;
+ 
+}
+
+header nav ul  li a:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #dd0000;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+header nav ul li a:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+
+header nav ul li ul li a
+{
+  display: block;
+}
+
+.swiper-container {
+  display: block;
+  width: 80%;
+  height: 400px;
+ 
+}
+
+.swiper-button-next{ font-size: 15px !important;  }
+.swiper-button-prev{ font-size: 15px !important;  }
+
+.swiper-slide {
+  
+  text-align: center;
+  font-size: 18px;
+  background-color: rgb(255, 255, 255);
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  width: 250px;
+  height: 250px;
+  
+}
+
+@media(max-width:1085px)
+{
+  .swiper-container{ width: 95%; height: 250px;} 
+}
+@media(max-width:1085px)
+{
+  .swiper-slide img {
+    
+    width: 180px;
+    height: 180px;
+    
+  }
+}
+
+.swiper-button-next{ padding-left:20px !important;  text-shadow: black;   color: rgb(0, 0, 0) !important;  }
+  .swiper-button-prev{ padding-right: 20px !important;  color: rgb(0, 0, 0) !important;  }
+  
+  .swiper-pagination-bullet{ border:4px solid rgba(101, 198, 255, 0.1) !important; color: black !important; background-color: rgb(0, 0, 0) !important;}
+  .swiper-pagination-bullet-active{ background-color: rgb(255, 171, 36) !important; border:4px solid rgb(255, 171, 36) !important;}
+
+.swiper-slide .onclass{ position:absolute; width: 100%; height: 400px; background-color: rgba(101, 198, 255, 0.1);}
+
+
+#headingdesign{
+  font-family: 'Courgette', cursive;
+  margin: 30px auto;
+  text-align: center;
+  font-size: 40px;
+  max-width: 600px;
+  position:relative;
+  }
+
+  #headingdesign1{
+    font-family: 'Courgette', cursive;
+    margin: 30px auto;
+    text-align: center;
+    font-size: 30px;
+    max-width: 600px;
+    position:relative;
+   
+    }
+
+   
+
+
+  .our-clients {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  
+  .our-clients ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  .our-clients ul li {
+    list-style: none;
+    display: inline-block;
+    width:180px;
+    height:100px;
+    position: relative;
+    overflow: hidden;
+    cursor:pointer;
+    margin: 10px;
+    
+    transition: .5s;
+  }
+  
+  .our-clients ul li img {
+    width: 100%;
+    height: 100%;
+  }
+  
+
+
+  @media(max-width:405px)
+  {
+    .our-clients ul li {
+     
+      width:150px;
+      
+    }
+    
+
+  }
+  @media(max-width:405px)
+  {
+    .our-clients ul li {
+     
+      width:120px;
+      
+    }
+    
+
+  }
+ 
+  
+  .footerclass{  display: grid; grid-template-columns: 50% 50% ; background-color:rgb(0, 0, 0); height: 550px;
+  
+  }
+
+
+
+  #devname{ width:100%; height:40px; background-color: rgb(22, 20, 20);}
+
+  #devname h3{ padding: 10px; font-size:18px; text-align: center; font-family: 'Courgette', cursive; color: rgb(255, 255, 255);}
+
+  #copyrightsdiv{ width:100%; height:40px; background-color: rgb(22, 20, 20);}
+
+  #copyrightsdiv h3{ padding: 10px; font-size: 12px; text-align: center; font-family: 'Courgette', cursive; color: rgb(255, 255, 255);}
+
+  @media(max-width:615px)
+  {
+    .footerclass{grid-template-columns: 100% ;
+   height: auto;
+    }
+  }
+
+  .addressareadiv{ padding: 20px;}
+  .addressareadiv h1{ font-size: 35px; font-family: 'Courgette', cursive; color: white;}
+  .addressareadiv i{ font-size: 30px; color: white; padding: 10px;}
+  .addressareadiv .fa-phone-alt{ color: rgb(192, 0, 0);}
+  .addressareadiv .fa-whatsapp{ color: green;}
+  .addressareadiv .fa-map-marker-alt{ color: rgb(255, 255, 255);}
+  .addressareadiv .fa-facebook-f{ color: rgb(9, 54, 255);}
+  .addressareadiv .fa-twitter{ color: rgb(0, 153, 255);}
+  .addressareadiv .fa-google{ color: gray;}
+
+  .addressareadiv table{ width: 100%; border-collapse: collapse; text-align: left; color: white; font-family: sans-serif ;}
+  .addressareadiv tr{ height: 50px;}
+
+  .addressareadiv td:hover{ color: gray; }
+
+  .addressareadiv a{ text-decoration: none; color: white; font-size: 18px;  font-family:  'Courgette', cursive;}
+  #likeme{ font-family: sans-serif; font-size: 20px; width: 120px; height: 30px; background-color: rgb(0, 0, 0); color:white; border: 3px solid rgb(255, 255, 255);}
+  #likeme{ padding: 0px;}
+
+
+  .contactusformdiv{ padding: 20px; }
+  .contactusformdiv h1{ font-size: 35px;  font-family: 'Courgette', cursive; color: white;}
+.contactusformdiv table{ padding: 30px; border:4px solid white; width: 100%;}
+
+.contactusformdiv tr{ padding-top: 20px;}
+  .contactusformdiv td input{ font-size: 17px; font-family: 'Courgette', cursive; padding-left:5px; width: 100%; height: 35px; background-color: rgb(61, 61, 61); color: white; }
+  .contactusformdiv input{ border: none; margin-bottom: 15px;}
+ ::placeholder { 
+    color: gray !important;
+   
+  }
+
+#formsubmit{ font-family: sans-serif; font-size: 20px; width: 150px; height: 50px; background-color: rgb(77, 77, 77); color:white; border: 3px solid rgb(255, 255, 255); }
+#likeme:hover{  background-color: white; color: black; font-weight: bold;}
+#formsubmit:hover{ background-color: rgb(0, 0, 0); color: rgb(255, 255, 255); font-weight: bold;}
+
+::-webkit-scrollbar
+{
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb:horizontal{
+  background:orange; 
+    }
+
+::-webkit-scrollbar-thumb {
+  background:orange; 
+ 
+}
+
+
+::-webkit-scrollbar-thumb:hover {
+  background:black; 
+}

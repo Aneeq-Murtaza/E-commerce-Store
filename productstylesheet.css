@@ -1,0 +1,47 @@
+
+*{ margin: 0; padding: 0; font-family: 'Open Sans', sans-serif;}
+html {
+  scroll-behavior: smooth;
+}
+.box-container{ padding-bottom: 10px; background-color: rgb(243, 239, 239); padding-top: 10px; margin-top: 20px; display: flex; align-items:center; justify-content:center; flex-wrap: wrap;}
+.box{ padding: 10px; flex: 1 1 250px; max-width: 200px ;  background-color: white;  position: relative; overflow: hidden; margin: 8px;}
+.box .image{ padding: 10px; background-color: rgb(255, 255, 255); text-align: center;} 
+.box .image img{  height: 150px; width:130px;}
+.box .info .title{  text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden; margin: 0px;  color: rgb(0, 0, 0); font-size: 16px;}
+.box .info .subinfo{ display: flex; align-items: center; justify-content: space-between; padding-top: 5px;}
+.box .info .subinfo .pricediv{ display: block; width: 100%; padding-top: 5px;}
+
+.box .info .subinfo .Price{  color: rgb(255, 94, 0); font-size: 20px; padding-bottom: 5px;}
+
+.box .info .subinfo .Cutprice .innerspan{ font-size: 14px; color: gray; text-decoration: line-through;}
+
+.box .info  #stars{ padding: 0px; margin: 0px; padding-top: 5px;}
+.box .info  #stars i{ color: rgb(255, 185, 55); font-size: 12px;}
+
+.box .info .subinfo .Cutprice .innerspan1{ font-size: 15px;}
+
+.searchdiv{ position: relative; font-family: sans-serif; width:80%;  margin-top:30px; }
+
+#searchtxt{ padding-right: 30px; padding-left: 20px; width:  calc(100% - 60px); background-color: rgb(100, 100, 100); border-radius: 40px; border: 1px solid rgb(156, 156, 156);  height: 35px;  font-size: 20px; color: white; outline: none;}
+#notfound{ margin-top: 20px; text-align:center; font-size: 30px;  font-weight: bold; color:rgb(221, 81, 0);}
+@media(max-width:420px)
+{
+  #notfound{ font-size: 18px;}
+}
+
+::placeholder { 
+    color: rgb(255, 255, 255);
+   
+  }
+
+.box:hover{ box-shadow: 0 0 2px 2px #ccc; }
+
+
+
+.searchdiv .fa-search{  position: absolute; font-size: 20px; color: rgb(255, 255, 255); right: 15px; top:10px;}
+
+#viewdetails{ border: none; border-radius: 5px; margin-top: 10px; width: 100%; height: 30px; background-color: rgb(253, 180, 45); color: white;}
+
+#viewdetails:hover{ background-color: rgb(223, 145, 0);}

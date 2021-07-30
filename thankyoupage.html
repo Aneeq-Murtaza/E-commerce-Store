@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanks....</title>
+    <link rel="stylesheet" href="cssalertdesign.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+
+</head>
+
+<style>
+
+.back{ margin-top: 20px; background-color:#e74100
+  ; color:white;font-family: 'Open Sans', sans-serif; padding: 10px; width:200px; height:45px; font-size:20px; border:none; border-radius:5px;}
+
+.back:hover{ background-color:#d13b00;  }
+
+</style>
+<body onload="clickme()">
+    <center>
+    <button onclick="goback()" class="back">Back To Cart</button>
+  </center>
+    <script>
+        function clickme(){
+      swal("Thank You For Placing Order", "", "success");
+        }
+        
+        </script>
+      <script src="https://unpkg.com/sweetalert@2.1.2/dist/sweetalert.min.js"> </script>
+
+
+      <script>
+          function goback()
+          {
+          history.go(-1);
+          
+                } 
+                     </script>
+</body>
+</html>
